@@ -1,0 +1,103 @@
+/* Girl animation css */
+
+svg .move-up {
+  -webkit-animation: move-up 3.5s infinite linear;
+  animation: move-up 3.5s infinite linear;
+}
+svg .eyes {
+  transform-origin: center 143px;
+  -webkit-animation: eyes 3.5s infinite linear;
+  animation: eyes 3.5s infinite linear;
+}
+
+@-webkit-keyframes move-up-small {
+  0%,
+  45%,
+  100% {
+    transform: translateY(0px);
+  }
+  50%,
+  95% {
+    transform: translateY(-2px);
+  }
+}
+@keyframes move-up-small {
+  0%,
+  45%,
+  100% {
+    transform: translateY(0px);
+  }
+  50%,
+  95% {
+    transform: translateY(-2px);
+  }
+}
+@-webkit-keyframes move-up {
+  0%,
+  45%,
+  100% {
+    transform: translateY(0px);
+  }
+  50%,
+  95% {
+    transform: translateY(-4px);
+  }
+}
+@keyframes move-up {
+  0%,
+  45%,
+  100% {
+    transform: translateY(0px);
+  }
+  50%,
+  95% {
+    transform: translateY(-4px);
+  }
+}
+@-webkit-keyframes eyes {
+  0%,
+  27%,
+  33%,
+  45%,
+  100% {
+    transform: translateY(0px) scaleY(1);
+  }
+  30% {
+    transform: translateY(0px) scaleY(0);
+  }
+  50%,
+  95% {
+    transform: translateY(-7px);
+  }
+}
+@keyframes eyes {
+  0%,
+  27%,
+  33%,
+  45%,
+  100% {
+    transform: translateY(0px) scaleY(1);
+  }
+  30% {
+    transform: translateY(0px) scaleY(0);
+  }
+  50%,
+  95% {
+    transform: translateY(-7px);
+  }
+}
+
+.girl,
+.eduCol {
+  transition: 1s box-shadow;
+  border-radius: 25px!important;
+}
+
+.girl:hover,
+.eduCol:hover {
+  box-shadow: 0 5px 35px 0px #D4AF37;
+}
+
+.girlAndText {
+  height: 90%;
+}

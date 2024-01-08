@@ -1,13 +1,85 @@
 body {
+  height: 100vh;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  cursor: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  color: silver!important;
+  cursor: none!important;
+  font-family: 'Merienda', cursive!important;
+}
+
+body .cursor {
+  pointer-events: none;
+}
+body .cursor__ball {
+  position: absolute;
+  top: 0;
+  left: 0;
+  mix-blend-mode: difference;
+  z-index: 1000;
+}
+body .cursor__ball circle {
+  fill: #f7f8fa;
+}
+
+a {
+  padding: 10px 0;
+  margin-top: 25px;
+  cursor: none;
+  text-decoration: none!important;
+}
+
+i:not(.submit) {
+  font-size: 1.8rem;
+}
+
+h1{
+  padding-bottom: 5px;
+  text-underline-offset: 5px;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-skip-ink: none;
+}
+
+.navbar .navbar-toggler {
+  border-color: silver;
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(192,192,192, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+}
+
+td, th, .card, .form-control {
+  background: #343d51!important;
+}
+
+.accordion {
+  --bs-accordion-bg: #343d51!important;
+  --bs-accordion-active-bg: #324364!important;
+  --bs-accordion-btn-icon: none!important;
+  --bs-accordion-btn-active-icon: none!important;
+  width: 50%;
+}
+
+body {
+  background: linear-gradient(45deg, #3d485f, #303f5e, rgb(89, 122, 189), #303f5e, #3d485f);
+  background-size: 300%;
+  animation: bg 15s ease-in-out infinite;
+  animation-direction: alternate;
+}
+
+@keyframes bg {
+
+  0% {
+    background-position: 0 0;
+  }
+  
+  100% {
+    background-position: 100%;
+  }
+
+  0% {
+    background-position: 0 0;
+  }
 }

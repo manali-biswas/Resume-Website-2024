@@ -1,21 +1,21 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Manali Biswas",
+  "name": "Portfolio Website of Manali Biswas",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "manaliFavicon.png",
+      "sizes": "128x128",
+      "type": "image/png"
     },
     {
-      "src": "logo192.png",
+      "src": "manaliLogo.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "2000x1500"
     },
     {
-      "src": "logo512.png",
+      "src": "manaliLogoTransparent.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "2000x1065"
     }
   ],
   "start_url": ".",

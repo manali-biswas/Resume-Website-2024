@@ -1,10 +1,11 @@
 .App {
   text-align: center;
+  width: 100%;
+  height: 100vh;
 }
 
 .App-logo {
   height: 40vmin;
-  pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,18 +15,38 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100%;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
   color: #61dafb;
+  cursor: none;
+}
+
+.name {
+  font-size: xx-large;
+  margin-top: 10px;
+}
+.introTop {
+  margin-bottom: 10px;
+}
+
+.header {
+  margin-bottom: 5%;
+}
+
+.table {
+  width: 80% !important;
+}
+
+th,
+td {
+  font-size: large;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +56,78 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.card-text,
+.card-link {
+  font-size: large;
+}
+
+.card {
+  border-color: transparent !important;
+}
+
+.g-4 {
+  margin-bottom: 2rem;
+}
+
+.accordion {
+  p {
+    font-size: 1rem;
+  }
+}
+
+.accordion-button {
+  cursor: none !important;
+  text-align: center !important;
+  display: block !important;
+}
+
+.accordion-button::after {
+  content: none !important;
+}
+
+.carousel {
+  text-align: center;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.carousel-caption {
+  padding-bottom: 4rem!important;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  background-image: none!important;
+}
+
+.roundedBorder {
+  border-radius: 16px;
+}
+
+form {
+  width: 50%;
+}
+
+.copyright {
+  margin-top: 5rem;
+  margin-bottom: 0;
+  font-size: small;
+}
+
+.scrollToTopParent {
+  position: relative;
+}
+
+.scrollToTop {
+  position: fixed;
+  bottom: 40px;
+  right: 25px;
+  z-index: 20;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
 }
